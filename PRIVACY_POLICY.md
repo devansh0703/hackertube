@@ -38,4 +38,4 @@ The HackerTube project is **not affiliated, authorized, or endorsed by YouTube, 
 HackerTube is an **open source software** that is built for learning and research purposes. We welcome and encourage collaboration and contributions from the community to help improve the app.
 
 ### Changes to Privacy Policy
-By using the HackerTube app, you consent to the handling of your information as outlined in this Privacy Policy. If you have any questions or concerns about our Privacy Policy, you are free to open an issue to ask about it or ask at the official [Matrix room](https://matrix.to/#/#HackerTube:matrix.org) of the app.
+By using the HackerTube app, you consent to the handling of your information as outlined in this Privacy Policy. If you have any questions or concerns about this policy, open an issue at [github.com/devansh0703/hackertube](https://github.com/devansh0703/hackertube/issues).

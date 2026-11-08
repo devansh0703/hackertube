@@ -1,24 +1,15 @@
-# Contribution
+# Contributing
 
-Whether you have ideas, translations, design changes, code cleaning or really heavy code changes, help is always welcome. The more is done, the better it gets! Please respect our [Code of Conduct](https://github.com/libre-tube/LibreTube/blob/master/CODE_OF_CONDUCT.md) in order to keep all interactions and discussions healthy.
+Whether you have ideas, bug reports, design changes, code cleanup or larger code changes, help is welcome. Please respect our [Code of Conduct](./CODE_OF_CONDUCT.md) so all interactions and discussions stay healthy.
 
-> [!NOTE]
-> The usage of AI to contribute, e.g. generate issue texts or pull requests, is not permitted.
-> Contributions/Issues using AI will be closed and ignored.
+## Reporting issues
 
-## Translations
+Open an issue at <https://github.com/devansh0703/hackertube/issues>. Include the HackerTube version, your Android version, steps to reproduce the problem and any relevant logs.
 
-Translations are managed using [WebLate](https://hosted.weblate.org/projects/libretube/#languages)
+## Code contributions
 
-## Code Contributions
+You can open and build the project like any other Android project using Android Studio.
 
-> [!NOTE]
-> Before implementing a new feature, we recommend to talk to a maintainer (e.g. by opening a discussion) to
-> see if the feature aligns with the vision of the project.
+Please make sure the title of your pull request and the commit messages follow the [conventional commit types](https://github.com/commitizen/conventional-commit-types/blob/master/index.json), for example `feat: add subject filters` or `fix: keep related videos local`.
 
-You can open and build the project like any other normal Android project by using Android Studio.
-
-Please make sure the title of your pull request and the commit messages follow the [conventional commit
-types](https://github.com/commitizen/conventional-commit-types/blob/master/index.json) (e.g. `feat: support
-for xy`).
-For instance, the most common commit types are "feat", "fix", "refactor", "ci" and "chore".
+HackerTube is a HackerTube-focused fork of LibreTube. Changes that reintroduce general YouTube discovery, YouTube recommendations or unrelated content should not be submitted.

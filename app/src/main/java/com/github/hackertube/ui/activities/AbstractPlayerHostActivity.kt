@@ -3,7 +3,6 @@ package com.github.hackertube.ui.activities
 import android.content.Intent
 import android.view.MenuItem
 import com.github.hackertube.R
-import com.github.hackertube.helpers.IntentHelper
 import com.github.hackertube.ui.base.BaseActivity
 import com.github.hackertube.ui.fragments.AudioPlayerFragment
 import com.github.hackertube.ui.fragments.PlayerFragment
@@ -54,16 +53,6 @@ abstract class AbstractPlayerHostActivity: BaseActivity() {
             R.id.action_help -> {
                 val helpIntent = Intent(this, HelpActivity::class.java)
                 startActivity(helpIntent)
-                true
-            }
-
-            R.id.action_donate -> {
-                IntentHelper.openLinkFromHref(
-                    this,
-                    supportFragmentManager,
-                    AboutActivity.DONATE_URL,
-                    forceDefaultOpen = true
-                )
                 true
             }
 

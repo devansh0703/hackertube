@@ -1,5 +1,9 @@
-This release fixes the recent video playback issues and that playlists contain no videos.
+HackerTube 32.1 is the first public HackerTube release for Android.
 
-To overcome the video playback issues, we implemented YouTube's new, custom streaming protocol (called SABR). YouTube started to progressively remove support for traditional streaming protocols, so HackerTube's support for the new protocol should make video playback much more reliable.
-
-Apart from this, the release includes support for podcasts and courses tabs on channels, a "resume all" option for downloads, as well as many minor bug fixes and small improvements.
+- Bundled the complete HackerTube catalogue: 6,454 videos across 150 topics, plus 27 curated playlists.
+- Added HackerTube-only home rows, browse pages, related videos and autoplay.
+- Added site filters for year, content type, duration, hidden gems, evergreen status and sorting.
+- Added the Longs tab for every video over one hour.
+- Added mixed search across videos, subjects and curated playlists.
+- Added locally stored Liked and Watch later lists.
+- Removed YouTube channel, comment and recommendation surfaces from catalogue playback.

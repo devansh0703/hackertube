@@ -1,174 +1,65 @@
 <div align="center">
-  <img src="assets/banners/gh-banner.png" width="auto" height="auto" alt="HackerTube">
+  <img src="assets/icons/HackerTube.png" width="112" alt="HackerTube">
 
-[![GPL-v3](assets/widgets/license-widget.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
-</div><div align="center" style="width:100%; display:flex; justify-content:space-between;">
+# HackerTube for Android
 
-[![Matrix](assets/widgets/mat-widget.svg)](https://matrix.to/#/#HackerTube:matrix.org)
-[![Mastodon](assets/widgets/mast-widget.svg)](https://fosstodon.org/@hackertube)
-[![Lemmy](assets/widgets/lemmy-widget.svg)](https://feddit.rocks/c/libretube)
+**The YouTube videos Hacker News keeps telling each other to watch, in a native Android app.**
 
+[Website](https://hackertube.org) · [Download](https://github.com/devansh0703/hackertube/releases/latest) · [Issues](https://github.com/devansh0703/hackertube/issues)
 </div>
 
-> **Note** <br>
-> We don't accept feature or bug requests on these platforms. Kindly submit requests only on GitHub.
+## About
 
-</div><div align="center" style="width:100%; display:flex; justify-content:space-between;">
+[HackerTube](https://hackertube.org) collects the videos that Hacker News commenters have recommended to each other for nearly two decades: conference talks, lectures, documentaries, deep dives and hidden gems.
 
-[<img src="assets/badges/fdrload.png" alt="Get it on F-Droid" width="30%">](https://f-droid.org/en/packages/com.github.libretube/)
-[<img src="assets/badges/izzyload.png" alt="Get it on IzzyOnDroid" width="30%">](https://apt.izzysoft.de/fdroid/index/apk/com.github.libretube)<br/>
-[<img src="assets/badges/ghload.png" alt="Get it on GitHub" width="30%">](https://github.com/libre-tube/LibreTube/releases/latest)
-[<img src="assets/badges/ghload-nightly.png" alt="Get it on GitHub (Nightly)" width="30%">](https://github.com/libre-tube/LibreTube/releases/tag/nightly)
+This Android app brings that catalogue to your phone. The complete HackerTube catalogue is bundled with the app, so discovery is based on Hacker News recommendations rather than YouTube's watch-time feed. Browse, search, playlists, Longs and related videos all stay inside HackerTube.
 
-</div>
+The bundled catalogue currently contains **6,454 videos**, organised by **150 topics in 16 areas**, with **27 curated playlists**.
 
-> **Note about Nightly builds** <br>
-> Nightly builds include features/fixes before the official release. Therefore, they are generally less stable than normal releases. Use nightly builds at your own risk.
+## Download
 
-<details>
-  <summary>📜️ Credits</summary>
+Get the latest APK from [GitHub Releases](https://github.com/devansh0703/hackertube/releases/latest).
 
-<sub>Readme Design and Banners by [XelXen](https://github.com/XelXen)</sub> <br>
-<sub>Readme Screenshots by [ARBoyGo](https://github.com/ARBoyGo)</sub> <br>
-<sub>Readme Emoji is from [openmoji](https://openmoji.org)</sub>
+Requires Android 8.0 (API 26) or newer.
 
-  <summary>Icons</summary>
+## Features
 
-<sub>[Default App Icon](https://github.com/libre-tube/LibreTube/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png) by [XelXen](https://github.com/XelXen)</sub> <br>
-<sub>[Boosted Bird](https://github.com/libre-tube/LibreTube/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_bird_round.png) by [Margot Albert-Heuzey](https://margotdesign.ovh)</sub>
+- **HackerTube-only discovery** — no YouTube home feed, shorts feed or unrelated recommendations.
+- **Browse with filters** — year, content type, duration, hidden gems, evergreen status and several sort orders.
+- **Longs** — every video over an hour, in one place.
+- **Curated playlists** — hand-ordered collections, with album-style playback.
+- **Mixed search** — videos, subjects and curated playlists in the same result list.
+- **Liked and Watch later** — stored locally on your device.
+- **Catalogue-only related videos and autoplay**, so playback never wanders outside HackerTube.
+- **Background playback and downloads** from the underlying player.
+- **Material 3 interface** with light and dark themes.
 
-</details>
+## Build from source
 
-<h2 align="left">
-<sub>
-<img  src="assets/readme/about.svg"
-      height="30"
-      width="30">
-</sub>
-About
-</h2>
+```bash
+git clone https://github.com/devansh0703/hackertube.git
+cd hackertube
+./gradlew assembleDebug
+```
 
-YouTube has an extremely invasive [privacy policy](https://support.google.com/youtube/answer/10364219) which relies on using user data in unethical ways. They store a lot of your personal data - ranging from ideas, music taste, content, political opinions, and much more than you think.
+The debug APK is written to `app/build/outputs/apk/debug/app-debug.apk`.
 
-HackerTube aims at improving the users' privacy by being independent from Google and bypassing their data collection as much as possible. The app only sends the minimum amount of data necessary to ensure that the app works, e.g. it only loads the YouTube-video you want to play without tracking your behavior when using the app.
+For a signed release build, create a `keystore.properties` file in the project root as described in `app/build.gradle.kts`, then run:
 
-If you have questions or need help, please make sure to read the [FAQ](https://libre-tube.github.io/#faq) before asking for help at the community channels. The [Matrix room](https://matrix.to/#/#HackerTube:matrix.org) is considered as the main communication channel, all other forums or social media accounts are maintained by volunteers from the community but not the developer(s).
+```bash
+./gradlew assembleRelease
+```
 
-<h2 align="left">
-<sub>
-<img  src="assets/readme/phone.svg"
-      height="30"
-      width="30">
-</sub>
-Screenshots
-</h2>
+## Catalogue and privacy
 
-<div style="width:100%; display:flex; justify-content:space-between;">
+The processed catalogue lives in [`app/src/main/assets/hackertube/`](app/src/main/assets/hackertube/) and is loaded entirely from the device. See [`NOTICE.txt`](app/src/main/assets/hackertube/NOTICE.txt) for data attribution.
 
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_1.jpg" width=19% alt="Home">](fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_1.jpg)
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_2.jpg" width=19% alt="Home">](fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_2.jpg)
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_3.jpg" width=19% alt="Subscriptions">](fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_3.jpg)
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_4.jpg" width=19% alt="Library">](fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_4.jpg)
-[<img src="fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_9.jpg" width=19% alt="Channel Overview">](fastlane/metadata/android/en-US/images/phoneScreenshots/Screenshot_9.jpg)
+Likes, Watch later and watch history are stored on-device. The app does not create HackerTube accounts or send viewing activity to HackerTube.
 
-* More screenshots can be found [here](https://github.com/libre-tube/LibreTube/blob/master/SCREEN_SHOT.md)
+HackerTube is an independent project. It is not affiliated with YouTube, Google, Hacker News or Y Combinator.
 
-</div>
+## Credits and licence
 
-<h2 align="left">
-<sub>
-<img  src="assets/readme/feature.svg"
-      height="30"
-      width="30">
-</sub>
-Features
-</h2>
+HackerTube for Android is built on [LibreTube](https://github.com/libre-tube/LibreTube), the GPLv3 Android client by Bnyro and contributors. The app remains free software under the [GNU General Public License v3 or later](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
-- [x] No Ads or Tracking
-- [x] Subscriptions
-- [x] Subscription Groups
-- [x] User Playlists
-- [x] Playlist Bookmarks
-- [x] Watch/Search History
-- [x] Downloads
-- [x] Background playback
-- [x] User Accounts via [Piped](https://github.com/TeamPiped/Piped) (optional)
-- [x] [SponsorBlock](https://sponsor.ajay.app/) - skip sponsored segments in videos
-- [x] [ReturnYouTubeDislike](https://www.returnyoutubedislike.com/) - provides video dislike statistics
-- [x] [DeArrow](https://dearrow.ajay.app/) - provides better titles and thumbnails
-
-<h2 align="left">
-<sub>
-<img  src="assets/readme/community.svg"
-      height="30"
-      width="30">
-</sub>
-Contributing
-</h2>
-
-For information on how to contribute, please check the [contribution guide](./CONTRIBUTING.md).
-
-<h2 align="left">
-<sub>
-<img  src="assets/readme/donate.svg"
-      height="30"
-      width="30">
-</sub>
-Donate
-</h2>
-
-Donations can be made at:
-* <https://github.com/sponsors/Bnyro>
-* <https://liberapay.com/Bnyro>
-* Monero (XMR): 47jAx7jMFo5iqy9VgDH98qL1bSK4kr6Pxi7HKWcRwsxbVYJdjxJtyrwXeAUa5MutvcQUmWMBfvAKnPAutDHvWEymUgLm5v8
-* Ethereum (ETH): 0x599909f54CdC18B997Be8F032341d1Fb14BF4F39
-
-Contributions in any form are welcome!
-
-<h2 align="left">
-📝 Translations
-</h2>
-
-<a href="https://hosted.weblate.org/projects/libretube/#languages">
-<img src="https://hosted.weblate.org/widgets/hackertube/-/287x66-grey.png" alt="Translation status" />
-</a>
-
-<h2 align="left">
-<sub>
-<img  src="assets/readme/ltvnp.svg"
-      height="30"
-      width="30">
-</sub>
-Differences to NewPipe
-</h2>
-
-HackerTube's main difference to NewPipe is that it has a much stronger focus on user experience. HackerTube uses the modern [Material 3 Expressive](https://m3.material.io) design, supports external APIs such as SponsorBlock, ReturnYouTubeDislike, or DeArrow, and allows you to synchronize your user data across devices, e.g. via Piped. <!-- TODO: replace with HackerTube sync server -->
-
-While HackerTube only supports content from YouTube, NewPipe also allows the use of other platforms like SoundCloud, PeerTube, Bandcamp and media.ccc.de.
-
-Both, HackerTube and NewPipe, are great clients for watching YouTube videos. There's no general answer about which one is better, just try them both and see which one fits you best.
-
-<h2 align="left">
-<sub>
-<img  src="assets/readme/privacy.svg"
-      height="30"
-      width="30">
-</sub>
-Privacy Policy and Disclaimer
-</h2>
-
-
-HackerTube aims to protect the privacy of its users. [Our Privacy Policy](/PRIVACY_POLICY.md) gives detailed information on which data the app stores in order to work, how it is being used, and how the project protects your personal information. It is recommended to read the privacy policy of HackerTube as well as the privacy policy of the instance you have chosen inside the app.
-
-## License
-[![GNU GPLv3 Image](https://www.gnu.org/graphics/gplv3-127x51.png)](http://www.gnu.org/licenses/gpl-3.0.en.html)
-
-HackerTube is [Free Software](https://en.wikipedia.org/wiki/Free_software): You can use, study, share and modify it at your will. The app can be redistributed and/or modified under the terms of the
-[GNU General Public License version 3 or later](https://www.gnu.org/licenses/gpl.html) published by the
-[Free Software Foundation](https://www.fsf.org/).
-
-<div align="right">
-<table><td>
-<a href="#start-of-content">↥ Scroll to top</a>
-</td></table>
-</div>
+The HackerTube catalogue and website are independent projects; see [hackertube.org/about](https://hackertube.org/about) for their credits and data licence.

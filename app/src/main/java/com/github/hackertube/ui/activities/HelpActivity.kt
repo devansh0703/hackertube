@@ -18,9 +18,6 @@ class HelpActivity : BaseActivity() {
         }
 
         setupCard(binding.faq, FAQ_URL)
-        setupCard(binding.matrix, MATRIX_URL)
-        setupCard(binding.mastodon, MASTODON_URL)
-        setupCard(binding.lemmy, LEMMY_URL)
     }
 
     private fun setupCard(card: MaterialCardView, link: String) {
@@ -30,9 +27,6 @@ class HelpActivity : BaseActivity() {
     }
 
     companion object {
-        private const val FAQ_URL = "https://libretube.dev/#faq"
-        private const val MATRIX_URL = "https://matrix.to/#/#HackerTube:matrix.org"
-        private const val MASTODON_URL = "https://fosstodon.org/@hackertube"
-        private const val LEMMY_URL = "https://feddit.rocks/c/libretube"
+        private const val FAQ_URL = "https://hackertube.org/about"
     }
 }
