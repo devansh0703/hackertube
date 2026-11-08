@@ -1,5 +1,5 @@
 name: 🐞 Issue Report
-description: Report a issue in LibreTube
+description: Report a issue in HackerTube
 labels: [bug]
 body:
 
@@ -37,11 +37,11 @@ body:
       required: true
 
   - type: input
-    id: libretube-version
+    id: hackertube-version
     attributes:
-      label: LibreTube version
+      label: HackerTube version
       description: |
-        You can find your LibreTube version in **Settings**.
+        You can find your HackerTube version in **Settings**.
       placeholder: |
         Example: "0.2.6"
     validations:

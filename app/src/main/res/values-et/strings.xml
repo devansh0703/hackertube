@@ -326,7 +326,7 @@
     <string name="rewind">Keri tagasi</string>
     <string name="forward">Keri edasi</string>
     <string name="alternative_pip_controls">Täiendavad võimalused pilt-pildis vaate halduseks</string>
-    <string name="audio_only_mode_summary">Muuda LibreTube muusikamängijaks</string>
+    <string name="audio_only_mode_summary">Muuda HackerTube muusikamängijaks</string>
     <string name="sleep_timer">Unetaimer</string>
     <string name="skip_silence">Jäta vaikus vahele</string>
     <string name="faq">Korduma kippuvad küsimused</string>
@@ -471,7 +471,7 @@
     <string name="export_subscriptions_to">Vali rakendus, mille jaoks ekspordid tellimused</string>
     <string name="tooltip_play">Esita</string>
     <string name="external_download_provider">Väline allalaadimisrakendus</string>
-    <string name="external_download_provider_summary">Sisesta välise allalaadimisrakenduse paketi nimi, mida soovid kasutada. Kui eelistad LibreTube\'i oma allalaadimislahendust, siis jäta tühjaks.</string>
+    <string name="external_download_provider_summary">Sisesta välise allalaadimisrakenduse paketi nimi, mida soovid kasutada. Kui eelistad HackerTube\'i oma allalaadimislahendust, siis jäta tühjaks.</string>
     <string name="screenshot">Ekraanitõmmis</string>
     <string name="pip">PiP</string>
     <string name="local_stream_extraction">Töötle meediavoogu kohalikus seadmes</string>
@@ -540,15 +540,15 @@
     <string name="comment_verified">Kontrollitud</string>
     <string name="comment_pinned">Esiplaanile tõstetud</string>
     <string name="courses">Kursused</string>
-    <string name="welcome">Tere tulemast, see on LibreTube! Alustamiseks palun vali alljärgnevast sünkroonimisviis, millega määrad kas ja kuidas sünkroonid oma andmeid eri seadmete vahel.</string>
+    <string name="welcome">Tere tulemast, see on HackerTube! Alustamiseks palun vali alljärgnevast sünkroonimisviis, millega määrad kas ja kuidas sünkroonid oma andmeid eri seadmete vahel.</string>
     <string name="choose_instance">Palun vali esmalt server!</string>
     <string name="load_data_from">Laadi YouTube\'i andmed</string>
     <string name="load_data_from_local">Otse YouTube\'ist</string>
     <string name="load_data_from_piped">Pipedi kaudu (aegunud lahendus)</string>
-    <string name="libretube_sync_server">LibreTube\'i sünkroonimisserveri abil</string>
+    <string name="hackertube_sync_server">HackerTube\'i sünkroonimisserveri abil</string>
     <string name="data_synchronization">Andmete sünkroonimine</string>
     <string name="sync_server_type">Sünkrooni kasutajaandmed (tellimused, esitusloendid)</string>
-    <string name="sync_server_url">LibreTube\'i sünkroonimisserveri võrguaadress</string>
+    <string name="sync_server_url">HackerTube\'i sünkroonimisserveri võrguaadress</string>
     <string name="export">Eksport</string>
     <string name="exporting">Eksportimine on pooleli…</string>
     <string name="missing_auth_falling_back">Pole logitud sisse. Andmete sünkroonimine on lülitatud välja.</string>
@@ -556,7 +556,7 @@
     <string name="oidc_login">Jätka OIDC abil</string>
     <string name="already_downloaded">Sa oled selle video juba alla laadinud!</string>
     <string name="sync_type_summary_none">Kõik kasutajaandmed on salvestatud rakenduses ilma võrguühendust kasutamata. See tähendab, et sa ei saa andmeid seadmete vahel sünkroonida, kuid see võib olla õige valik, kui kasutad ainult ühte seadet või kui seadmete vaheline sünkroonimine pole sulle oluline.</string>
-    <string name="sync_type_summary_libretube">Esitusloendid ja tellimused on salvestatud LibreTube\'i sünkroonimisserveris (%1$s). See võimaldab sul ükspuha, mis oma seadmest sisse logida ja sul on ligipääs oma esitusloenditele ja tellimustele. Privaatsusteade: andmed on serveris seotud pseudonüümiga, kuid läbivalt krüptimata. Kui tahad, siis saad ka oma serveri kasutusele võtta, kuid tavaliselt piisab ametlikust serverist.</string>
+    <string name="sync_type_summary_hackertube">Esitusloendid ja tellimused on salvestatud HackerTube\'i sünkroonimisserveris (%1$s). See võimaldab sul ükspuha, mis oma seadmest sisse logida ja sul on ligipääs oma esitusloenditele ja tellimustele. Privaatsusteade: andmed on serveris seotud pseudonüümiga, kuid läbivalt krüptimata. Kui tahad, siis saad ka oma serveri kasutusele võtta, kuid tavaliselt piisab ametlikust serverist.</string>
     <string name="sync_type_summary_piped">Vana lahendus, mis sobib vaid oskuskasutajatele:\nEsitusloendid ja tellimused on salvestatud Pipedi serveris (%1$s). Kuna Pipedil pole enam avalikke serverid, siis pead paigaldama oma serveri.</string>
     <string name="switch_sync_type_warning">Kui oled varem kasutanud teistsugust sünkroonimise tüüpi, palun tee esmalt oma tellimustest ja esitusloenditest varukoopia. Seejärel võid seadistustest muuta sünkroonimistüüpi ja importida andmed varukoopiast tagasi.</string>
     <string name="account">Kasutajakonto</string>

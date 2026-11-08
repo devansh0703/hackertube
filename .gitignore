@@ -31,3 +31,6 @@ google-services.json
 # Android Profiling
 *.hprof
 .DS_Store
+
+# HackerTube source dataset (processed copy lives in app/src/main/assets/hackertube)
+.hackertube-data/

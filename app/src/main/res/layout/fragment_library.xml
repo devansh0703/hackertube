@@ -7,7 +7,7 @@
     android:background="?android:colorBackground"
     tools:context=".ui.fragments.LibraryFragment">
 
-    <com.github.libretube.ui.views.CustomSwipeToRefresh
+    <com.github.hackertube.ui.views.CustomSwipeToRefresh
         android:id="@+id/playlist_refresh"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -68,7 +68,48 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/liked_videos"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:ellipsize="marquee"
+                        android:maxLines="1"
+                        android:text="@string/hackertube_liked_videos"
+                        android:textStyle="bold"
+                        app:icon="@drawable/ic_like" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/watch_later"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="marquee"
+                        android:maxLines="1"
+                        android:text="@string/hackertube_watch_later"
+                        android:textStyle="bold"
+                        app:icon="@drawable/ic_time_outlined" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/curated_playlists"
+                        style="@style/Widget.Material3.Button.OutlinedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/hackertube_curated_playlists"
+                        app:icon="@drawable/ic_playlist" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -160,7 +201,7 @@
             </LinearLayout>
 
         </androidx.core.widget.NestedScrollView>
-    </com.github.libretube.ui.views.CustomSwipeToRefresh>
+    </com.github.hackertube.ui.views.CustomSwipeToRefresh>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/create_playlist"

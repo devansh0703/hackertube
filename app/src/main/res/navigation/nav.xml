@@ -6,7 +6,7 @@
     app:startDestination="@id/homeFragment">
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.github.libretube.ui.fragments.HomeFragment"
+        android:name="com.github.hackertube.ui.fragments.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home">
         <action
@@ -56,17 +56,47 @@
     </fragment>
     <fragment
         android:id="@+id/trendsFragment"
-        android:name="com.github.libretube.ui.fragments.TrendsFragment"
+        android:name="com.github.hackertube.ui.fragments.TrendsFragment"
         android:label="fragment_trends"
         tools:layout="@layout/fragment_trends_content" />
     <fragment
+        android:id="@+id/longsFragment"
+        android:name="com.github.hackertube.ui.fragments.LongsFragment"
+        android:label="@string/hackertube_longs"
+        tools:layout="@layout/fragment_longs" />
+    <fragment
+        android:id="@+id/curatedPlaylistsFragment"
+        android:name="com.github.hackertube.ui.fragments.CuratedPlaylistsFragment"
+        android:label="@string/hackertube_curated_playlists"
+        tools:layout="@layout/fragment_hackertube_playlists" />
+    <fragment
+        android:id="@+id/curatedPlaylistFragment"
+        android:name="com.github.hackertube.ui.fragments.CuratedPlaylistFragment"
+        android:label="@string/hackertube_curated_playlists"
+        tools:layout="@layout/fragment_curated_playlist">
+        <argument
+            android:name="playlistSlug"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedVideosFragment"
+        android:name="com.github.hackertube.ui.fragments.SavedVideosFragment"
+        android:label="@string/hackertube_liked_videos"
+        tools:layout="@layout/fragment_saved_videos">
+        <argument
+            android:name="mode"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+    <fragment
         android:id="@+id/subscriptionsFragment"
-        android:name="com.github.libretube.ui.fragments.SubscriptionsFragment"
+        android:name="com.github.hackertube.ui.fragments.SubscriptionsFragment"
         android:label="fragment_subscriptions"
         tools:layout="@layout/fragment_subscriptions" />
     <fragment
         android:id="@+id/libraryFragment"
-        android:name="com.github.libretube.ui.fragments.LibraryFragment"
+        android:name="com.github.hackertube.ui.fragments.LibraryFragment"
         android:label="fragment_library"
         tools:layout="@layout/fragment_library">
         <action
@@ -86,12 +116,12 @@
     </fragment>
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.github.libretube.ui.fragments.SearchSuggestionsFragment"
+        android:name="com.github.hackertube.ui.fragments.SearchSuggestionsFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search_suggestions" />
     <fragment
         android:id="@+id/searchResultFragment"
-        android:name="com.github.libretube.ui.fragments.SearchResultFragment"
+        android:name="com.github.hackertube.ui.fragments.SearchResultFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search_result">
         <argument
@@ -101,7 +131,7 @@
     </fragment>
     <fragment
         android:id="@+id/channelFragment"
-        android:name="com.github.libretube.ui.fragments.ChannelFragment"
+        android:name="com.github.hackertube.ui.fragments.ChannelFragment"
         android:label="channel"
         tools:layout="@layout/fragment_channel">
         <argument
@@ -117,7 +147,7 @@
     </fragment>
     <fragment
         android:id="@+id/playlistFragment"
-        android:name="com.github.libretube.ui.fragments.PlaylistFragment"
+        android:name="com.github.hackertube.ui.fragments.PlaylistFragment"
         android:label="fragment_playlist"
         tools:layout="@layout/fragment_playlist">
         <argument
@@ -127,23 +157,44 @@
         <argument
             android:name="playlistType"
             android:defaultValue="PUBLIC"
-            app:argType="com.github.libretube.enums.PlaylistType"
+            app:argType="com.github.hackertube.enums.PlaylistType"
+            app:nullable="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.github.hackertube.ui.fragments.CategoryFragment"
+        android:label="category"
+        tools:layout="@layout/fragment_category">
+        <argument
+            android:name="categoryId"
+            app:argType="string"
+            app:nullable="false" />
+        <argument
+            android:name="categoryName"
+            app:argType="string"
             app:nullable="false" />
     </fragment>
     <fragment
         android:id="@+id/watchHistoryFragment"
-        android:name="com.github.libretube.ui.fragments.WatchHistoryFragment"
+        android:name="com.github.hackertube.ui.fragments.WatchHistoryFragment"
         android:label="@string/watch_history"
         tools:layout="@layout/fragment_watch_history" />
     <fragment
         android:id="@+id/downloadsFragment"
-        android:name="com.github.libretube.ui.fragments.DownloadsFragment"
+        android:name="com.github.hackertube.ui.fragments.DownloadsFragment"
         android:label="@string/downloads"
         tools:layout="@layout/fragment_downloads" />
 
     <action
         android:id="@+id/openChannel"
         app:destination="@id/channelFragment"
+        app:enterAnim="@animator/nav_default_enter_anim"
+        app:exitAnim="@animator/nav_default_exit_anim"
+        app:popEnterAnim="@animator/nav_default_pop_enter_anim"
+        app:popExitAnim="@animator/nav_default_pop_exit_anim" />
+    <action
+        android:id="@+id/openCategory"
+        app:destination="@id/categoryFragment"
         app:enterAnim="@animator/nav_default_enter_anim"
         app:exitAnim="@animator/nav_default_exit_anim"
         app:popEnterAnim="@animator/nav_default_pop_enter_anim"

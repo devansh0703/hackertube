@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <PreferenceCategory android:title="@string/data_synchronization">
-        <com.github.libretube.ui.views.ButtonGroupPreference
+        <com.github.hackertube.ui.views.ButtonGroupPreference
             android:icon="@drawable/ic_region"
             android:title="@string/sync_server_type"
             android:key="sync_server"
@@ -20,7 +20,7 @@
         <EditTextPreference
             app:icon="@drawable/ic_server"
             app:defaultValue="https://sync.libretube.dev"
-            app:key="libretube_sync_server_url"
+            app:key="hackertube_sync_server_url"
             app:title="@string/sync_server_url"
             app:useSimpleSummaryProvider="true"/>
 

@@ -1,0 +1,16 @@
+HackerTube data
+===============
+
+Source: https://hackertube.org/data
+Dataset exported 2026-10-31: 6,454 videos, 39,834 labeled Hacker News comments,
+150 topic categories in 16 areas, and the related-video graph.
+
+Licensed under ODC-By 1.0: https://opendatacommons.org/licenses/by/1-0/
+
+HackerTube was prompted into existence by Andrej Karpathy and built by Claude
+working in Claude Code. Video data comes from the YouTube Data API and comments
+from the public Hacker News archive. Video titles and channel names belong to
+their creators.
+
+This application is an independent project and is not affiliated with
+hackertube.org, Andrej Karpathy, Hacker News, Y Combinator, YouTube or Google.

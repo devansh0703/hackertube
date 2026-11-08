@@ -310,7 +310,7 @@
     <string name="alternative_pip_controls">ضوابط الفيديوهات العائمة</string>
     <string name="alternative_pip_controls_summary">إظهار الصوت فقط وتخطي ضوابط الفيديوهات العائمة بدلاً من التقديم والترجيع</string>
     <string name="audio_only_mode">وضع الصوت فقط</string>
-    <string name="audio_only_mode_summary">حول LibreTube إلى مشغل موسيقى</string>
+    <string name="audio_only_mode_summary">حول HackerTube إلى مشغل موسيقى</string>
     <string name="no_subtitle">لا توجد ترجمة</string>
     <string name="download_paused">إيقاف التنزيل مؤقتًا</string>
     <string name="download_completed">اكتمل التنزيل</string>
@@ -475,7 +475,7 @@
     <string name="thumbnail_time">وقت الصورة المصغرة</string>
     <string name="best_quality">الأفضل</string>
     <string name="external_download_provider">مزود التحميل الخارجي</string>
-    <string name="external_download_provider_summary">أدخل اسم حزمة التطبيق الذي تريد استخدامه لتنزيل مقاطع الفيديو. اتركه فارغًا لاستخدام أداة التنزيل المدمجة في LibreTube.</string>
+    <string name="external_download_provider_summary">أدخل اسم حزمة التطبيق الذي تريد استخدامه لتنزيل مقاطع الفيديو. اتركه فارغًا لاستخدام أداة التنزيل المدمجة في HackerTube.</string>
     <string name="screenshot">لقطة شاشة</string>
     <string name="pip">فيديو عائم</string>
     <string name="local_stream_extraction_summary">جلب معلومات تشغيل الفيديو مباشرة من YouTube دون استخدام Piped.</string>
@@ -552,13 +552,13 @@
     <string name="comment_verified">مُتحقّق منه</string>
     <string name="comment_pinned">مثبَّت</string>
     <string name="courses">دورات</string>
-    <string name="welcome">مرحبًا بك في LibreTube! للبدء، يُرجى اختيار وضع المزامنة أدناه لتحديد ما إذا كنت تريد مزامنة بياناتك عبر الأجهزة.</string>
+    <string name="welcome">مرحبًا بك في HackerTube! للبدء، يُرجى اختيار وضع المزامنة أدناه لتحديد ما إذا كنت تريد مزامنة بياناتك عبر الأجهزة.</string>
     <string name="choose_instance">يرجى اختيار خادم أولاً!</string>
     <string name="choose_instance_long">يُرجى اختيار خادم Piped لاستخدامه من الأسفل. سيعمل خادم Piped كوسيط بينك وبين YouTube. توجد هذه الخوادم في مواقع جغرافية مختلفة — يُشار إليها بعلم/أعلام بلدها. من المرجح أن تكون الخوادم الأقرب إليك جغرافيًا أسرع من الخوادم غير القريبة منك. يمكنك تغيير الخادم الذي تستخدمه من الإعدادات في أي وقت.</string>
     <string name="load_data_from">تحميل بيانات YouTube من</string>
     <string name="load_data_from_local">مباشرةً من YouTube</string>
     <string name="load_data_from_piped">عبر Piped (متوقف عن التطوير مؤقتًا)</string>
-    <string name="libretube_sync_server">خادم مزامنة Libre Tube</string>
+    <string name="hackertube_sync_server">خادم مزامنة Libre Tube</string>
     <string name="data_synchronization">مزامنة البيانات</string>
     <string name="sync_server_type">مزامنة بيانات المستخدم (الاشتراكات، قوائم التشغيل) عبر</string>
     <string name="sync_server_url">رابط خادم مزامنة Libre Tube</string>
@@ -566,7 +566,7 @@
     <string name="exporting">جاري التصدير…</string>
     <string name="missing_auth_falling_back">لم يتم تسجيل الدخول تم إيقاف مزامنة البيانات.</string>
     <string name="sync_type_summary_none">قم بتخزين جميع بيانات المستخدم دون اتصال بالإنترنت داخل التطبيق هذا يعني أنه لا يمكنك مزامنة البيانات بين أجهزتك ولكنه قد يكون الخيار الصحيح إذا كنت تستخدم جهازًا واحدًا فقط أو لا تهتم بالمزامنة بين الأجهزة.</string>
-    <string name="sync_type_summary_libretube">خزّن بيانات قوائم التشغيل والاشتراكات على خادم المزامنة الخاص بـ LibreTube (%1$s) يتيح لك ذلك تسجيل الدخول إلى حسابك على أي جهاز آخر للوصول إلى اشتراكاتك وقوائم التشغيل إخلاء مسؤولية الخصوصية: تُستخدم أسماء مستعارة لبيانات المستخدم على جانب الخادم ولكنها ليست مشفّرة من طرف إلى طرف. يمكنك أيضًا، إن أردت استضافة نسختك الخاصة من الخادم لكن عادةً ما يكون الخادم الرسمي كافيًا تمامًا.</string>
+    <string name="sync_type_summary_hackertube">خزّن بيانات قوائم التشغيل والاشتراكات على خادم المزامنة الخاص بـ HackerTube (%1$s) يتيح لك ذلك تسجيل الدخول إلى حسابك على أي جهاز آخر للوصول إلى اشتراكاتك وقوائم التشغيل إخلاء مسؤولية الخصوصية: تُستخدم أسماء مستعارة لبيانات المستخدم على جانب الخادم ولكنها ليست مشفّرة من طرف إلى طرف. يمكنك أيضًا، إن أردت استضافة نسختك الخاصة من الخادم لكن عادةً ما يكون الخادم الرسمي كافيًا تمامًا.</string>
     <string name="sync_type_summary_piped">للخبراء فقط. متوقف عن التطوير مؤقتًا: خزّن بيانات قوائم التشغيل والاشتراكات على Piped (%1$s) بما أنه لم يعد لدى Piped أي خوادم عامة فعليك استضافة خادم Piped خاص بك.</string>
     <string name="switch_sync_type_warning">إذا كنت قد استخدمت نوع مزامنة مختلفًا سابقًا فيُرجى أخذ نسخة احتياطية من اشتراكاتك وقوائم التشغيل أولاً يمكنك بعد ذلك تبديل نوع المزامنة في إعدادات المثيل وإعادة استيراد بياناتك من النسخة الاحتياطية.</string>
     <string name="oidc_login">المتابعة مع OIDC</string>

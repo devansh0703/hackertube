@@ -55,15 +55,72 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <com.google.android.material.chip.ChipGroup
-                android:id="@+id/filter_chip_group"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingStart="10dp"
-                app:checkedChip="@id/chip_all"
-                app:selectionRequired="true"
-                app:singleLine="true"
-                app:singleSelection="true">
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="10dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/search_filter_button"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:maxLines="1"
+                    android:text="@string/hackertube_filters"
+                    app:icon="@drawable/ic_filter_sort" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/search_chip_recent"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:checkable="true"
+                    android:maxLines="1"
+                    android:text="@string/hackertube_filter_recent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/search_chip_longs"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:checkable="true"
+                    android:maxLines="1"
+                    android:text="@string/hackertube_longs" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/search_chip_gems"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:checkable="true"
+                    android:maxLines="1"
+                    android:text="@string/hackertube_filter_gems" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/search_chip_all"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="6dp"
+                    android:checkable="true"
+                    android:maxLines="1"
+                    android:text="@string/hackertube_filter_all" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/filter_chip_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:checkedChip="@id/chip_all"
+                    app:selectionRequired="true"
+                    app:singleLine="true"
+                    app:singleSelection="true">
 
                 <com.google.android.material.chip.Chip
                     android:id="@+id/chip_all"
@@ -109,7 +166,9 @@
                     android:id="@+id/chip_music_artists"
                     style="@style/Chip"
                     android:text="@string/music_artists" />
-            </com.google.android.material.chip.ChipGroup>
+                </com.google.android.material.chip.ChipGroup>
+
+            </LinearLayout>
         </HorizontalScrollView>
 
         <androidx.recyclerview.widget.RecyclerView

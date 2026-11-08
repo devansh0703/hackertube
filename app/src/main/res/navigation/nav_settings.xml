@@ -6,42 +6,42 @@
 
     <fragment
         android:id="@+id/mainSettings"
-        android:name="com.github.libretube.ui.preferences.MainSettings"
+        android:name="com.github.hackertube.ui.preferences.MainSettings"
         android:label="@string/settings" />
 
     <fragment
         android:id="@+id/dataManagementSettings"
-        android:name="com.github.libretube.ui.preferences.DataManagementSettings"
+        android:name="com.github.hackertube.ui.preferences.DataManagementSettings"
         android:label="@string/account" />
 
     <fragment
         android:id="@+id/generalSettings"
-        android:name="com.github.libretube.ui.preferences.GeneralSettings"
+        android:name="com.github.hackertube.ui.preferences.GeneralSettings"
         android:label="@string/general" />
 
     <fragment
         android:id="@+id/appearanceSettings"
-        android:name="com.github.libretube.ui.preferences.AppearanceSettings"
+        android:name="com.github.hackertube.ui.preferences.AppearanceSettings"
         android:label="@string/appearance" />
     <fragment
         android:id="@+id/audioVideoSettings"
-        android:name="com.github.libretube.ui.preferences.AudioVideoSettings"
+        android:name="com.github.hackertube.ui.preferences.AudioVideoSettings"
         android:label="@string/audio_video" />
     <fragment
         android:id="@+id/backupRestoreSettings"
-        android:name="com.github.libretube.ui.preferences.BackupRestoreSettings"
+        android:name="com.github.hackertube.ui.preferences.BackupRestoreSettings"
         android:label="@string/backup_restore" />
     <fragment
         android:id="@+id/notificationSettings"
-        android:name="com.github.libretube.ui.preferences.NotificationSettings"
+        android:name="com.github.hackertube.ui.preferences.NotificationSettings"
         android:label="@string/notifications" />
     <fragment
         android:id="@+id/playerSettings"
-        android:name="com.github.libretube.ui.preferences.PlayerSettings"
+        android:name="com.github.hackertube.ui.preferences.PlayerSettings"
         android:label="@string/player" />
     <fragment
         android:id="@+id/sponsorBlockSettings"
-        android:name="com.github.libretube.ui.preferences.SponsorBlockSettings"
+        android:name="com.github.hackertube.ui.preferences.SponsorBlockSettings"
         android:label="@string/sponsorblock" />
 
     <action

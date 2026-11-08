@@ -18,4 +18,4 @@ Please note that for the process to work, the following requirements must be met
 4. Create a new tag from the `master` branch, e.g. via `git tag v0.0 && git push --tags`.
 
 ## Post Release Process
-1. If the release is noteworthy, create a [Mastodon post](https://fosstodon.org/@libretube)
+1. If the release is noteworthy, create a [Mastodon post](https://fosstodon.org/@hackertube)

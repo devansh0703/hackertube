@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name" translatable="false">LibreTube</string>
+    <string name="app_name" translatable="false">HackerTube</string>
     <string name="startpage">Home</string>
     <string name="subscriptions">Subscriptions</string>
     <string name="library">Library</string>
@@ -319,9 +319,13 @@
     <string name="audio_track">Audio track</string>
     <string name="unsupported_file_format">Unsupported file format: %1$s</string>
     <string name="auto_quality">Auto</string>
-    <string name="trends">Trends</string>
-    <string name="featured">Featured</string>
-    <string name="trending">What\'s trending now</string>
+    <string name="trends">Browse</string>
+    <string name="featured">Top picks</string>
+    <string name="trending">Top picks by topic</string>
+    <string name="top_picks">Top picks</string>
+    <string name="top_in_topic">Top in %1$s</string>
+    <string name="collections">Collections</string>
+    <string name="category_video_count">%1$s · %2$d videos</string>
     <string name="bookmarks">Bookmarks</string>
     <string name="bookmark">Bookmark</string>
     <string name="clear_bookmarks">Clear bookmarks</string>
@@ -364,7 +368,7 @@
     <string name="alternative_pip_controls">Alternative PiP controls</string>
     <string name="alternative_pip_controls_summary">Show audio only and skip controls in PiP instead of forward and rewind</string>
     <string name="audio_only_mode">Audio only mode</string>
-    <string name="audio_only_mode_summary">Turn LibreTube into a music player</string>
+    <string name="audio_only_mode_summary">Turn HackerTube into a music player</string>
     <string name="sleep_timer">Sleep timer</string>
     <string name="skip_silence">Skip silence</string>
     <string name="help">Help</string>
@@ -396,7 +400,7 @@
     <string name="creation_date_reversed">Creation date (reversed)</string>
     <string name="alphabetic">Alphabetic</string>
     <string name="alphabetic_reversed">Alphabetic (reversed)</string>
-    <string name="welcome">Welcome to LibreTube! To get started, please select a synchronization mode below to decide whether to synchronize your user data across devices.</string>
+    <string name="welcome">Welcome to HackerTube! To get started, please select a synchronization mode below to decide whether to synchronize your user data across devices.</string>
     <string name="choose_instance">Please choose an instance first!</string>
     <string name="choose_instance_long">Please choose a Piped instance to use from below. The Piped instance will act as the middleman between you and YouTube. These instances are located at different physical locations - indicated by their country flag(s). Instances physically closer to you are likely faster than instances that are not. You can change the instance you use in the settings at any time.</string>
     <string name="mark_as_unwatched">Mark as unwatched</string>
@@ -444,10 +448,10 @@
     <string name="load_data_from">Load YouTube data from</string>
     <string name="load_data_from_local">Directly from YouTube</string>
     <string name="load_data_from_piped">via Piped (deprecated)</string>
-    <string name="libretube_sync_server">LibreTube sync server</string>
+    <string name="hackertube_sync_server">HackerTube sync server</string>
     <string name="data_synchronization">Data synchronization</string>
     <string name="sync_server_type">Sync user data (subscriptions, playlists) via</string>
-    <string name="sync_server_url">URL to LibreTube sync server</string>
+    <string name="sync_server_url">URL to HackerTube sync server</string>
     <string name="export">Export</string>
     <string name="exporting">Export in progress…</string>
     <string name="account">Account</string>
@@ -504,7 +508,7 @@
     <string name="change">Change</string>
     <string name="gestures">Gestures</string>
     <string name="external_download_provider">External download provider</string>
-    <string name="external_download_provider_summary">Enter the package name of the app you want to use for downloading videos. Leave blank to use LibreTube\'s inbuilt downloader.</string>
+    <string name="external_download_provider_summary">Enter the package name of the app you want to use for downloading videos. Leave blank to use HackerTube\'s inbuilt downloader.</string>
     <string name="local_stream_extraction">Local stream extraction</string>
     <string name="local_stream_extraction_summary">Directly fetch video playback information from YouTube without using Piped.</string>
     <string name="local_ryd">Local Return Youtube Dislike extractor</string>
@@ -532,7 +536,7 @@
     <string name="resume_all">Resume Downloads</string>
     <string name="missing_auth_falling_back">Not logged in. Data synchronization turned off.</string>
     <string name="sync_type_summary_none">Store all user data offline within the app. That means that you can\'t synchronize data between your devices, but might be the right choice if you only use a single device or don\'t care about syncing between devices.</string>
-    <string name="sync_type_summary_libretube">Store playlists and subscriptions data on LibreTube\'s sync server (%1$s). This allows you to log in to your account at any other device to have access to your subscriptions and playlists. Privacy Disclaimer: User data is pseudonymized on server side, but not end-to-end encrypted. By choice, you can also host your own version of the server, but usually the official server should be just fine.</string>
+    <string name="sync_type_summary_hackertube">Store playlists and subscriptions data on HackerTube\'s sync server (%1$s). This allows you to log in to your account at any other device to have access to your subscriptions and playlists. Privacy Disclaimer: User data is pseudonymized on server side, but not end-to-end encrypted. By choice, you can also host your own version of the server, but usually the official server should be just fine.</string>
     <string name="sync_type_summary_piped">Experts only, deprecated:\nStore playlists and subscriptions data on Piped (%1$s). As Piped doesn\'t have any public instances anymore, you have to be hosting your own Piped instance.</string>
     <string name="switch_sync_type_warning">If you previously used a different sync type, please take a backup of your subscriptions and playlists first. You can then switch the sync type in the instance settings and re-import your data from the backup.</string>
     <string name="oidc_login">Continue with OIDC</string>
@@ -575,4 +579,30 @@
     <string name="import_temp_playlist_summary">Do you want to create a new playlist named \'%1$s\'? The playlist will contain %2$d videos.</string>
     <string name="comment_verified">Verified</string>
     <string name="comment_pinned">Pinned</string>
+
+    <string name="hackertube_longs">Longs</string>
+    <string name="hackertube_longs_subtitle">Every video over an hour. The opposite of Shorts.</string>
+    <string name="hackertube_longs_count">%1$d videos over an hour</string>
+    <string name="hackertube_filters">Filters</string>
+    <string name="hackertube_filter_apply">Apply</string>
+    <string name="hackertube_filter_clear_all">Clear all</string>
+    <string name="hackertube_filter_recent">Recently recommended</string>
+    <string name="hackertube_filter_gems">Hidden gems</string>
+    <string name="hackertube_filter_all">All videos</string>
+    <string name="hackertube_curated_playlists">Curated playlists</string>
+    <string name="hackertube_curated_playlists_subtitle">Curated from what Hacker News recommends, each in a deliberate order.</string>
+    <string name="hackertube_curated_playlist_info">%1$d videos · %2$d min</string>
+    <string name="hackertube_liked_videos">Liked videos</string>
+    <string name="hackertube_watch_later">Watch later</string>
+    <string name="hackertube_like">Like</string>
+    <string name="hackertube_added_to_liked">Added to Liked</string>
+    <string name="hackertube_removed_from_liked">Removed from Liked</string>
+    <string name="hackertube_added_to_watch_later">Saved to Watch later</string>
+    <string name="hackertube_removed_from_watch_later">Removed from Watch later</string>
+    <string name="hackertube_saved_count">%1$d videos</string>
+    <string name="hackertube_empty_saved">Nothing here yet. Long-press a video and choose Like or Watch later.</string>
+    <string name="hackertube_empty_playlists">No curated playlists available.</string>
+    <string name="hackertube_subject">Subject</string>
+    <string name="hackertube_channels_not_available">Channels aren’t part of HackerTube</string>
+
 </resources>

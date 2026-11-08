@@ -10,12 +10,19 @@
         android:id="@+id/trendsFragment"
         android:icon="@drawable/ic_trending"
         android:title="@string/trends"
-        android:visible="false" />
+        android:visible="true" />
+
+    <item
+        android:id="@+id/longsFragment"
+        android:icon="@drawable/ic_time_outlined"
+        android:title="@string/hackertube_longs"
+        android:visible="true" />
 
     <item
         android:id="@+id/subscriptionsFragment"
         android:icon="@drawable/ic_subscriptions"
-        android:title="@string/subscriptions" />
+        android:title="@string/subscriptions"
+        android:visible="false" />
 
     <item
         android:id="@+id/libraryFragment"

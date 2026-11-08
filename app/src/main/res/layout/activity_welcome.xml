@@ -21,7 +21,7 @@
             app:expandedTitleTextColor="@android:color/transparent"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
-            <com.github.libretube.ui.views.AppIconHeader
+            <com.github.hackertube.ui.views.AppIconHeader
                 android:paddingTop="30dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -68,11 +68,11 @@
                 android:text="@string/none" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/sync_mode_libretube"
+                android:id="@+id/sync_mode_hackertube"
                 style="?attr/materialButtonOutlinedStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/libretube_sync_server" />
+                android:text="@string/hackertube_sync_server" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/sync_mode_piped"

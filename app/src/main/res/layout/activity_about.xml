@@ -17,7 +17,7 @@
             android:fitsSystemWindows="true"
             app:title="@string/about" />
 
-        <com.github.libretube.ui.views.AppIconHeader
+        <com.github.hackertube.ui.views.AppIconHeader
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -67,7 +67,8 @@
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/translate"
-            style="@style/AboutCard">
+            style="@style/AboutCard"
+            android:visibility="gone">
 
             <androidx.appcompat.widget.AppCompatTextView
                 style="@style/AboutItem"

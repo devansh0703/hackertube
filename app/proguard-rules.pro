@@ -30,9 +30,9 @@
 #-keepnames class **
 
 # Keep data classes used for Retrofit
--keep class com.github.libretube.obj.** { *; }
--keep class com.github.libretube.api.obj.** { *; }
--keep class com.github.libretube.obj.update.** { *; }
+-keep class com.github.hackertube.obj.** { *; }
+-keep class com.github.hackertube.api.obj.** { *; }
+-keep class com.github.hackertube.obj.update.** { *; }
 
 # Keep rules required by Kotlinx Serialization
 -if @kotlinx.serialization.Serializable class **
@@ -116,7 +116,7 @@
 -keepclassmembers class androidx.constraintlayout.motion.widget.** { *; }
 
 # Settings fragments are loaded through reflection
--keep class com.github.libretube.ui.preferences.** { *; }
+-keep class com.github.hackertube.ui.preferences.** { *; }
 
 ## Rules for NewPipeExtractor
 -keep class org.schabi.newpipe.extractor.timeago.patterns.** { *; }
